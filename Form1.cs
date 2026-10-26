@@ -22,32 +22,88 @@ namespace Salao_de_Beleza
         private void AplicarEstilo()
         {
             this.BackColor = Cores.Fundo;
+            this.ForeColor = Cores.TextoPrincipal;
+            this.Font = new Font("Roboto", 9F, FontStyle.Regular);
 
-            btnNovoAgendamento.FillColor = Cores.AzulMarinho;
-            btnNovoAgendamento.ForeColor = Cores.TextoBranco;
-            btnNovoAgendamento.BorderRadius = 4;
-            btnNovoAgendamento.BorderThickness = 0;
+            EstilizarBotaoMenu(btnInicio, true);
+            EstilizarBotaoMenu(btnAgendamentos, false);
+            EstilizarBotaoMenu(btnProdutos, false);
+            EstilizarBotaoMenu(BtnClientes, false);
+            EstilizarBotaoMenu(btnVendas, false);
+            EstilizarBotaoMenu(btnEstoque, false);
+            EstilizarBotaoMenu(btnRelatorios, false);
+            EstilizarBotaoMenu(btnSair, false);
 
-            btnNovoAgendamento.HoverState.FillColor = Cores.AzulSelecionado;
-            btnNovoAgendamento.PressedColor = Cores.Rosa;
+            EstilizarBotaoPrincipal(btnNovoAgendamento);
+            EstilizarBotaoSecundario(btnNovoCliente);
+            EstilizarBotaoSecundario(btnRealizarVenda);
 
-            btnNovoCliente.FillColor = Cores.Branco;
-            btnNovoCliente.ForeColor = Cores.TextoPrincipal;
-            btnNovoCliente.BorderColor = Cores.AzulAcinzentado;
-            btnNovoCliente.BorderThickness = 1;
-            btnNovoCliente.BorderRadius = 4;
+            EstilizarIndicador(lblAgendamentosHoje);
+            EstilizarIndicador(lblVendasDia);
+            EstilizarIndicador(lblClientesCadastrados);
 
-            btnNovoCliente.HoverState.FillColor = Cores.LinhaSelecionada;
-            btnNovoCliente.PressedColor = Cores.Rosa;
+            pnlProximosAgendamentos.FillColor = Cores.Branco;
+            pnlProximosAgendamentos.BorderColor = Cores.Borda;
+            pnlProximosAgendamentos.BorderThickness = 1;
+            pnlProximosAgendamentos.BorderRadius = 4;
+        }
 
-            btnRealizarVenda.FillColor = Cores.Branco;
-            btnRealizarVenda.ForeColor = Cores.TextoPrincipal;
-            btnRealizarVenda.BorderColor = Cores.AzulAcinzentado;
-            btnRealizarVenda.BorderThickness = 1;
-            btnRealizarVenda.BorderRadius = 4;
+        private void EstilizarBotaoMenu(Guna.UI2.WinForms.Guna2Button botao, bool selecionado)
+        {
+            botao.FillColor = selecionado ? Cores.AzulSelecionado : Cores.AzulMarinho;
 
-            btnRealizarVenda.HoverState.FillColor = Cores.LinhaSelecionada;
-            btnRealizarVenda.PressedColor = Cores.Rosa;
+            botao.ForeColor = Cores.TextoBranco;
+            botao.Font = new Font("Roboto", 9F, FontStyle.Regular);
+
+            botao.BorderThickness = 0;
+            botao.BorderRadius = 0;
+
+            botao.HoverState.FillColor = Cores.AzulSelecionado;
+            botao.HoverState.ForeColor = Cores.TextoBranco;
+
+            botao.PressedColor = Cores.Rosa;
+            botao.Cursor = Cursors.Hand;
+        }
+
+        private void EstilizarBotaoPrincipal(Guna.UI2.WinForms.Guna2Button botao)
+        {
+            botao.FillColor = Cores.AzulMarinho;
+            botao.ForeColor = Cores.TextoBranco;
+
+            botao.Font = new Font("Roboto", 9F, FontStyle.Bold);
+
+            botao.BorderThickness = 0;
+            botao.BorderRadius = 4;
+
+            botao.HoverState.FillColor = Cores.AzulSelecionado;
+            botao.PressedColor = Cores.Rosa;
+
+            botao.Cursor = Cursors.Hand;
+        }
+
+        private void EstilizarBotaoSecundario(Guna.UI2.WinForms.Guna2Button botao)
+        {
+            botao.FillColor = Cores.Branco;
+            botao.ForeColor = Cores.TextoPrincipal;
+
+            botao.Font = new Font("Roboto", 9F, FontStyle.Regular);
+
+            botao.BorderColor = Cores.AzulAcinzentado;
+            botao.BorderThickness = 1;
+            botao.BorderRadius = 4;
+
+            botao.HoverState.FillColor = Cores.LinhaSelecionada;
+            botao.HoverState.ForeColor = Cores.TextoPrincipal;
+
+            botao.PressedColor = Cores.Rosa;
+            botao.Cursor = Cursors.Hand;
+        }
+
+        private void EstilizarIndicador(Label label)
+        {
+            label.ForeColor = Cores.TextoPrincipal;
+            label.Font = new Font("Roboto", 16F, FontStyle.Bold);
+            label.BackColor = Cores.Branco;
         }
 
         private void Panel_Lateral_Paint(object sender, PaintEventArgs e)
@@ -56,6 +112,11 @@ namespace Salao_de_Beleza
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnClientes_Click(object sender, EventArgs e)
         {
 
         }

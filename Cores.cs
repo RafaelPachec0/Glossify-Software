@@ -9,28 +9,22 @@ namespace Salao_de_Beleza
 {
     public static class Cores
     {
-        public static Color AzulMarinho = ColorTranslator.FromHtml("#15233A");
-        public static Color AzulSelecionado = ColorTranslator.FromHtml("#223754");
-        public static Color Rosa = ColorTranslator.FromHtml("#BE9497");
-
-        public static Color MarromAcinzentado = ColorTranslator.FromHtml("#69525B");
-        public static Color AzulAcinzentado = ColorTranslator.FromHtml("#848C96");
-        public static Color CinzaMedio = ColorTranslator.FromHtml("#7C808C");
-
-        public static Color Fundo = ColorTranslator.FromHtml("#F5F6F8");
-        public static Color Branco = ColorTranslator.FromHtml("#FFFFFF");
-        public static Color FundoTabela = ColorTranslator.FromHtml("#ECEFF3");
-        public static Color LinhaSelecionada = ColorTranslator.FromHtml("#F3EAEA");
-
-        public static Color TextoPrincipal = ColorTranslator.FromHtml("#171827");
-        public static Color TextoSecundario = ColorTranslator.FromHtml("#7C808C");
-        public static Color TextoBranco = ColorTranslator.FromHtml("#FFFFFF");
-
-        public static Color Verde = ColorTranslator.FromHtml("#25845B");
-        public static Color Vermelho = ColorTranslator.FromHtml("#C83D3D");
-        public static Color Amarelo = ColorTranslator.FromHtml("#C58A27");
-
-        public static Color FundoConfirmado = ColorTranslator.FromHtml("#E3F2E9");
-        public static Color FundoPendente = ColorTranslator.FromHtml("#FFF0D9");
+        public static readonly Color AzulMarinho = ColorTranslator.FromHtml("#15233A");
+        public static readonly Color AzulSelecionado = ColorTranslator.FromHtml("#223754");
+        public static readonly Color Rosa = ColorTranslator.FromHtml("#BE9497");
+        public static readonly Color Fundo = ColorTranslator.FromHtml("#F5F6F8");
+        public static readonly Color Branco = ColorTranslator.FromHtml("#FFFFFF");
+        public static readonly Color FundoTabela = ColorTranslator.FromHtml("#ECEFF3");
+        public static readonly Color LinhaSelecionada = ColorTranslator.FromHtml("#F3EAEA");
+        public static readonly Color TextoPrincipal = ColorTranslator.FromHtml("#171827");
+        public static readonly Color TextoSecundario = ColorTranslator.FromHtml("#7C808C");
+        public static readonly Color TextoBranco = ColorTranslator.FromHtml("#FFFFFF");
+        public static readonly Color Verde = ColorTranslator.FromHtml("#25845B");
+        public static readonly Color FundoConfirmado = ColorTranslator.FromHtml("#E3F2E9");
+        public static readonly Color Amarelo = ColorTranslator.FromHtml("#C58A27");
+        public static readonly Color FundoPendente = ColorTranslator.FromHtml("#FFF0D9");
+        public static readonly Color Vermelho = ColorTranslator.FromHtml("#C83D3D");
+        public static readonly Color Borda = ColorTranslator.FromHtml("#E1E5EB");
+        public static readonly Color AzulAcinzentado = ColorTranslator.FromHtml("#848C96");
     }
 }
