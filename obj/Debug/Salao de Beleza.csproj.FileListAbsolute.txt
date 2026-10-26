@@ -23,3 +23,16 @@ C:\Users\rafae\OneDrive\Área de Trabalho\Glossify-Software-main\bin\Debug\Salao
 C:\Users\rafae\OneDrive\Área de Trabalho\Glossify-Software-main\bin\Debug\Salao de Beleza.pdb
 C:\Users\rafae\OneDrive\Área de Trabalho\Glossify-Software-main\bin\Debug\Guna.UI2.dll
 C:\Users\rafae\OneDrive\Área de Trabalho\Glossify-Software-main\obj\Debug\Salao de.CA124423.Up2Date
+C:\Users\ALUNO\Desktop\Glossify-Software-main\bin\Debug\Salao de Beleza.exe.config
+C:\Users\ALUNO\Desktop\Glossify-Software-main\bin\Debug\Salao de Beleza.exe
+C:\Users\ALUNO\Desktop\Glossify-Software-main\bin\Debug\Salao de Beleza.pdb
+C:\Users\ALUNO\Desktop\Glossify-Software-main\bin\Debug\Guna.UI2.dll
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de Beleza.csproj.AssemblyReference.cache
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de Beleza.exe.config
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao_de_Beleza.Form1.resources
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao_de_Beleza.Properties.Resources.resources
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de Beleza.csproj.GenerateResource.cache
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de Beleza.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de.CA124423.Up2Date
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de Beleza.exe
+C:\Users\ALUNO\Desktop\Glossify-Software-main\obj\Debug\Salao de Beleza.pdb

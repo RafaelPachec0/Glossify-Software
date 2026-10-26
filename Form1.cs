@@ -17,6 +17,7 @@ namespace Salao_de_Beleza
             InitializeComponent();
 
             AplicarEstilo();
+            EstilizarDataGridView();
         }
 
         private void AplicarEstilo()
@@ -41,11 +42,6 @@ namespace Salao_de_Beleza
             EstilizarIndicador(lblAgendamentosHoje);
             EstilizarIndicador(lblVendasDia);
             EstilizarIndicador(lblClientesCadastrados);
-
-            pnlProximosAgendamentos.FillColor = Cores.Branco;
-            pnlProximosAgendamentos.BorderColor = Cores.Borda;
-            pnlProximosAgendamentos.BorderThickness = 1;
-            pnlProximosAgendamentos.BorderRadius = 4;
         }
 
         private void EstilizarBotaoMenu(Guna.UI2.WinForms.Guna2Button botao, bool selecionado)
@@ -106,6 +102,39 @@ namespace Salao_de_Beleza
             label.BackColor = Cores.Branco;
         }
 
+        private void EstilizarDataGridView()
+        {
+            dgvProximosAgendamentos.BorderStyle = BorderStyle.None;
+            dgvProximosAgendamentos.GridColor = Cores.Borda;
+            dgvProximosAgendamentos.Font = new Font("Roboto", 9F, FontStyle.Regular);
+            dgvProximosAgendamentos.ForeColor = Cores.TextoPrincipal;
+            dgvProximosAgendamentos.AllowUserToAddRows = false;
+            dgvProximosAgendamentos.AllowUserToResizeRows = false;
+            dgvProximosAgendamentos.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvProximosAgendamentos.RowHeadersVisible = false;
+            dgvProximosAgendamentos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProximosAgendamentos.MultiSelect = false;
+            dgvProximosAgendamentos.ReadOnly = true;
+            dgvProximosAgendamentos.AlternatingRowsDefaultCellStyle.BackColor = Cores.Fundo;
+            dgvProximosAgendamentos.DefaultCellStyle.BackColor = Cores.Branco;
+            dgvProximosAgendamentos.DefaultCellStyle.ForeColor = Cores.TextoPrincipal;
+            dgvProximosAgendamentos.DefaultCellStyle.SelectionBackColor =  Cores.LinhaSelecionada;
+            dgvProximosAgendamentos.DefaultCellStyle.SelectionForeColor = Cores.TextoPrincipal;
+            dgvProximosAgendamentos.DefaultCellStyle.Padding = new Padding(8, 4, 8, 4);
+            dgvProximosAgendamentos.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dgvProximosAgendamentos.EnableHeadersVisualStyles = false;
+            dgvProximosAgendamentos.ColumnHeadersDefaultCellStyle.BackColor = Cores.FundoTabela;
+            dgvProximosAgendamentos.ColumnHeadersDefaultCellStyle.ForeColor = Cores.TextoPrincipal;
+            dgvProximosAgendamentos.ColumnHeadersDefaultCellStyle.Font = new Font("Roboto", 9F, FontStyle.Bold);
+            dgvProximosAgendamentos.ColumnHeadersDefaultCellStyle.Padding = new Padding(8, 4, 8, 4);
+            dgvProximosAgendamentos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dgvProximosAgendamentos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvProximosAgendamentos.ColumnHeadersHeight = 38;
+            dgvProximosAgendamentos.RowTemplate.Height = 40;
+            dgvProximosAgendamentos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvProximosAgendamentos.AutoSizeRowsMode =  DataGridViewAutoSizeRowsMode.None;
+        }
+
         private void Panel_Lateral_Paint(object sender, PaintEventArgs e)
         {
 
@@ -117,6 +146,16 @@ namespace Salao_de_Beleza
         }
 
         private void BtnClientes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlProximosAgendamentos_Paint(object sender, PaintEventArgs e)
         {
 
         }
